@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Custom cursor
 const cursor = document.querySelector('.custom-cursor');
 const cursorTrail = document.querySelector('.custom-cursor-trail');
-
 let mouseX = 0;
 let mouseY = 0;
 let trailX = 0;
@@ -32,10 +31,8 @@ document.addEventListener('mousemove', (e) => {
 function animateTrail() {
   trailX += (mouseX - trailX) * 0.15;
   trailY += (mouseY - trailY) * 0.15;
-
   cursorTrail.style.left = trailX - 6 + 'px';
   cursorTrail.style.top = trailY - 6 + 'px';
-
   requestAnimationFrame(animateTrail);
 }
 animateTrail();
@@ -46,4 +43,19 @@ document.addEventListener('mousedown', () => {
 
 document.addEventListener('mouseup', () => {
   cursor.classList.remove('clicking');
+});
+
+// Detectar hover em elementos interativos
+const interactiveElements = document.querySelectorAll('a, button, .project-card');
+
+interactiveElements.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('hovering');
+    cursorTrail.classList.add('hovering');
+  });
+  
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hovering');
+    cursorTrail.classList.remove('hovering');
+  });
 });
