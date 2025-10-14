@@ -13,7 +13,6 @@ const scrollObserver = new IntersectionObserver(
 	}
 );
 
-// Observar todos os elementos com classes de animação
 document
 	.querySelectorAll(
 		'.scroll-fade-up, .scroll-fade-in, .scroll-slide-right, .scroll-slide-left, .scroll-scale'
@@ -22,46 +21,7 @@ document
 		scrollObserver.observe(el);
 	});
 
-// PARALLAX EFFECT
-let ticking = false;
 
-function updateParallax() {
-	const scrolled = window.pageYOffset;
-	const parallaxElements = document.querySelectorAll('.parallax-slow');
-
-	parallaxElements.forEach((el) => {
-		const speed = parseFloat(el.dataset.parallax) || 0.5;
-		const yPos = -(scrolled * speed);
-		el.style.transform = `translateY(${yPos}px) rotate(${scrolled * 0.05}deg)`;
-	});
-
-	// Parallax para backgrounds
-	const header = document.querySelector('.header');
-	if (header && scrolled < window.innerHeight) {
-		const headerPattern = header.querySelector('.header::after');
-		header.style.backgroundPositionY = `${scrolled * 0.3}px`;
-	}
-
-	ticking = false;
-}
-
-function requestParallaxUpdate() {
-	if (!ticking) {
-		window.requestAnimationFrame(updateParallax);
-		ticking = true;
-	}
-}
-
-// Só ativar parallax se não for prefers-reduced-motion
-const prefersReducedMotion = window.matchMedia(
-	'(prefers-reduced-motion: reduce)'
-);
-
-if (!prefersReducedMotion.matches) {
-	window.addEventListener('scroll', requestParallaxUpdate, {
-		passive: true,
-	});
-}
 
 // ANIMAÇÕES ORIGINAIS
 const observer = new IntersectionObserver((entries, obs) => {
