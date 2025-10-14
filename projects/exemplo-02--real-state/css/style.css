@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@import url('./animations.css');
 @import url('./reset.css');
 
 :root {
@@ -25,7 +24,6 @@ button {
 	cursor: pointer;
 	border-radius: 111px;
 	padding: 19px 35px;
-	max-width: 178px; /* Ou remover width */
 	height: 60px;
 	transition: all 300ms ease-in-out;
 	--button: var(--color_accent);
@@ -80,6 +78,7 @@ body {
 	padding: 88px 0;
 	position: relative;
 	z-index: 2;
+  overflow: hidden;
 }
 .container__detail::after {
 	content: '';
@@ -103,7 +102,7 @@ body {
 }
 
 .header::after {
-  content: '';
+	content: '';
 	background-image: url(../assets/images/line-pattern.png);
 	width: 968px;
 	height: 858px;
@@ -294,6 +293,15 @@ body {
 .introduction .introduction__image.animated {
 	margin: 44.44px 33.33px;
 	animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .introduction .container {
 	position: relative;
