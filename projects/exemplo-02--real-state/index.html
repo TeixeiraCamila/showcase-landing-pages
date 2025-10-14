@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="SK Builders - International property appraisal, sales, purchases, and investments. Experience the epitome of home comfort."
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			rel="shortcut icon"
@@ -13,103 +17,169 @@
 			href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>SK Builders</title>
+		<title>SK Builders - Luxury Real Estate</title>
 	</head>
 	<body>
+		<a href="#introduction" class="skip-link">Skip to main content</a>
+
 		<header class="header">
 			<div class="header__container container">
 				<div class="header__logo">
-					<img src="./assets/images/logo.png" alt="SK Builders" />
+					<picture>
+						<source srcset="./assets/images/logo.webp" type="image/webp" />
+						<img
+							src="./assets/images/logo.webp"
+							alt="SK Builders - Luxury Real Estate"
+							width="240"
+							height="68"
+						/>
+					</picture>
 				</div>
 
-				<!-- hamburger para mobile -->
-				<button class="header__burger" aria-label="Abrir menu">
+				<button
+					class="header__burger"
+					aria-label="Open menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
 					<span class="burger__box">
 						<span class="burger__inner"></span>
 					</span>
 				</button>
 
-				<ul class="header__menu">
-					<li class="header__menu-item"><a href="#">Home</a></li>
-					<li class="header__menu-item"><a href="#">Properties</a></li>
-					<li class="header__menu-item header__menu-item--submenu">
-						<a href="#">Buy</a>
-					</li>
-					<li class="header__menu-item header__menu-item--submenu">
-						<a href="#">Sell</a>
-					</li>
-					<li class="header__menu-item header__menu-item--submenu">
-						<a href="#">Rent</a>
-					</li>
-				</ul>
+				<nav class="header__nav" aria-label="Main navigation">
+					<ul class="header__menu">
+						<li class="header__menu-item"><a href="#introduction">Home</a></li>
+						<li class="header__menu-item"><a href="#project">Properties</a></li>
+						<li class="header__menu-item header__menu-item--submenu">
+							<a href="#quality">Buy</a>
+						</li>
+						<li class="header__menu-item header__menu-item--submenu">
+							<a href="#about">Sell</a>
+						</li>
+						<li class="header__menu-item header__menu-item--submenu">
+							<a href="#project">Rent</a>
+						</li>
+					</ul>
+				</nav>
 
 				<div class="header__login">
-					<button class="header__login-btn">Get Started</button>
+					<button
+						class="header__login-btn"
+						aria-label="Get started with SK Builders"
+					>
+						Get Started
+					</button>
 				</div>
 			</div>
 		</header>
 
 		<main>
-			<section class="introduction section__green">
+			<section
+				id="introduction"
+				class="introduction section__green"
+				aria-labelledby="intro-heading"
+			>
 				<div class="container">
-					<h1 class="introduction__title">
+					<h1 id="intro-heading" class="scroll-fade-up">
 						Experience the epitome of home comfort.
 					</h1>
 
-					<p class="introduction__txt">
+					<p class="introduction__txt scroll-fade-up">
 						Our international brand specializes in property appraisal, sales,
 						purchases, and investments. Trust us to deliver exceptional service
 						and help you find your perfect real estate opportunity.
 					</p>
-					<img
-						class="introduction__image animated"
-						src="./assets/images/stamp.png"
-						alt="SK Builders quality stamp"
-					/>
-
-					<div class="introduction__container--image">
+					<picture>
+						<source srcset="./assets/images/stamp.webp" type="image/webp" />
 						<img
-							class="introduction__image"
-							src="./assets/images/introduction__image.png"
+							class="introduction__image animated parallax-slow"
+							src="./assets/images/stamp.webp"
 							alt=""
+							width="150"
+							height="150"
+							aria-hidden="true"
+							data-parallax="0.3"
 						/>
-						<a href="#" class="icon">
+					</picture>
+
+					<div class="introduction__container--image scroll-scale">
+						<picture>
+							<source
+								srcset="./assets/images/introduction__image.webp"
+								type="image/webp"
+							/>
 							<img
 								class="introduction__image"
-								src="./assets/images/introduction__icon.png"
-								alt=""
+								src="./assets/images/introduction__image.webp"
+								alt="Modern luxury home exterior with elegant architecture"
+								width="800"
+								height="600"
+								loading="eager"
 							/>
+						</picture>
+						<a
+							href="#project"
+							class="introduction__icon"
+							aria-label="View our projects"
+						>
+							<picture>
+								<source
+									srcset="./assets/images/introduction__icon.webp"
+									type="image/webp"
+								/>
+								<img
+									src="./assets/images/introduction__icon.webp"
+									alt=""
+									width="200"
+									height="200"
+									aria-hidden="true"
+								/>
+							</picture>
 						</a>
 					</div>
 				</div>
 			</section>
 
-			<section class="about">
+			<section id="about" class="about" aria-labelledby="about-heading">
 				<div class="about__container container">
 					<div class="about__flex flex">
-						<div class="about__right">
-							<h3 class="about__title title--entry">
-								<img
-									src="./assets/images/about__icon.png"
-									alt="Illustration of company values"
-									class="about__image"
-									width="122"
-									height="122"
-								/>
+						<div class="about__right scroll-slide-right">
+							<h2 id="about-heading" class="title--entry">
+								<picture>
+									<source
+										srcset="./assets/images/about__icon.webp"
+										type="image/webp"
+									/>
+									<img
+										src="./assets/images/about__icon.webp"
+										alt=""
+										class="about__image"
+										width="122"
+										height="122"
+										loading="lazy"
+										aria-hidden="true"
+									/>
+								</picture>
 								About us
-							</h3>
+							</h2>
 							<p class="about__text">
 								We take great pride in ensuring the satisfaction of our
 								customers. That's why we proudly guarantee the quality and
 								reliability of our products.
 							</p>
-							<button class="about__button">Get Started</button>
+							<button
+								class="about__button"
+								aria-label="Get started with our services"
+							>
+								Get Started
+							</button>
 						</div>
 
-						<div class="about__left">
-							<h2 class="about__title">
+						<div class="about__left scroll-slide-left">
+							<h3 class="about__title">
 								We've found luxury homes for clients for a decade.
-							</h2>
+							</h3>
 							<p class="about__description">
 								We take great pride in ensuring the satisfaction of our
 								customers, which is why we guarantee that the products we sell
@@ -119,91 +189,145 @@
 
 							<ul class="about__achievements flex">
 								<li class="about__achievement">
-									<h3
+									<h4
 										class="about__achievement-number"
 										id="awards"
 										data-number="10"
+										aria-live="polite"
 									>
 										0 <span>+</span>
-									</h3>
+									</h4>
 									<p class="about__achievement-text">Awards Gained</p>
 								</li>
 								<li class="about__achievement">
-									<h3
+									<h4
 										class="about__achievement-number"
 										id="experience"
 										data-number="20"
+										aria-live="polite"
 									>
 										0 <span>+</span>
-									</h3>
+									</h4>
 									<p class="about__achievement-text">Years of Experience</p>
 								</li>
 								<li class="about__achievement">
-									<h3
+									<h4
 										class="about__achievement-number"
 										id="rented"
 										data-number="598"
+										aria-live="polite"
 									>
 										0 <span>+</span>
-									</h3>
+									</h4>
 									<p class="about__achievement-text">Rented Home Stay</p>
 								</li>
 							</ul>
 						</div>
 					</div>
-					<img
-						class="about__video"
-						src="./assets/images/about__image.png"
-						alt="Video placeholder"
-					/>
+					<picture class="scroll-fade-in">
+						<source
+							srcset="./assets/images/about__image.webp"
+							type="image/webp"
+						/>
+						<img
+							class="about__video"
+							src="./assets/images/about__image.webp"
+							alt="Play video about SK Builders story"
+							width="1200"
+							height="675"
+							loading="lazy"
+						/>
+					</picture>
 				</div>
 			</section>
 
-			<section class="project section__green">
+			<section
+				id="project"
+				class="project section__green"
+				aria-labelledby="project-heading"
+			>
 				<div class="container project__container container__detail">
 					<div class="project__flex">
-						<h3 class="project__title title--entry">
-							<img
-								src="./assets/images/about__icon.png"
-								alt="Illustration of company values"
-								class="about__image"
-								width="122"
-								height="122"
-							/>
+						<h2
+							id="project-heading"
+							class="project__title title--entry scroll-fade-up"
+						>
+							<picture>
+								<source
+									srcset="./assets/images/about__icon.webp"
+									type="image/webp"
+								/>
+								<img
+									src="./assets/images/about__icon.webp"
+									alt=""
+									class="about__image"
+									width="122"
+									height="122"
+									loading="lazy"
+									aria-hidden="true"
+								/>
+							</picture>
 							The Project
-						</h3>
-						<p class="project__txt">
+						</h2>
+						<p class="project__txt scroll-fade-up">
 							Together, we can conquer challenges, utilize our strengths, and
 							achieve remarkable success in this ambitious home project.
 						</p>
 					</div>
-					<div class="project__slider">
+					<div
+						class="project__slider scroll-fade-up"
+						role="region"
+						aria-label="Project gallery"
+						aria-live="polite"
+					>
 						<div class="project__slider-track">
 							<img
-								src="./assets/images/slider-01.png"
-								alt="Project image 1"
+								src="./assets/images/slider-01.webp"
+								alt="Modern luxury home project showcase 1"
 								class="project__slider-item"
+								width="1200"
+								height="800"
+								loading="lazy"
 							/>
 							<img
-								src="./assets/images/slider-02.png"
-								alt="Project image 2"
+								src="./assets/images/slider-02.webp"
+								alt="Modern luxury home project showcase 2"
 								class="project__slider-item"
+								width="1200"
+								height="800"
+								loading="lazy"
 							/>
 							<img
-								src="./assets/images/slider-03.png"
-								alt="Project image 3"
+								src="./assets/images/slider-03.webp"
+								alt="Modern luxury home project showcase 3"
 								class="project__slider-item"
+								width="1200"
+								height="800"
+								loading="lazy"
+							/>
+
+              <img
+								src="./assets/images/slider-04.webp"
+								alt="Modern luxury home project showcase 4"
+								class="project__slider-item"
+								width="1200"
+								height="800"
+								loading="lazy"
 							/>
 							<img
-								src="./assets/images/slider-04.png"
-								alt="Project image 4"
+								src="./assets/images/slider-05.webp"
+								alt="Modern luxury home project showcase 5"
 								class="project__slider-item"
+								width="1200"
+								height="800"
+								loading="lazy"
 							/>
 						</div>
+
 						<div class="project__slider-arrow">
 							<button
 								class="project__slider-arrow--prev"
-								aria-label="Previous slide"
+								aria-label="Previous project image"
 							>
 								<svg
 									width="75"
@@ -211,6 +335,7 @@
 									viewBox="0 0 75 74"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
 								>
 									<rect
 										x="73.5555"
@@ -233,7 +358,7 @@
 							</button>
 							<button
 								class="project__slider-arrow--next"
-								aria-label="Next slide"
+								aria-label="Next project image"
 							>
 								<svg
 									width="75"
@@ -241,6 +366,7 @@
 									viewBox="0 0 75 74"
 									fill="none"
 									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
 								>
 									<rect
 										x="1.44392"
@@ -265,86 +391,193 @@
 				</div>
 			</section>
 
-			<section class="quality section__green">
+			<section
+				id="quality"
+				class="quality section__green"
+				aria-labelledby="quality-heading"
+			>
 				<div class="container quality__container container__detail">
-					<h3 class="quality__title title--entry">
-						<img
-							src="./assets/images/about__icon.png"
-							alt="Illustration of company values"
-							class="about__image"
-							width="122"
-							height="122"
-						/>
+					<h2
+						id="quality-heading"
+						class="quality__title title--entry scroll-fade-up"
+					>
+						<picture>
+							<source
+								srcset="./assets/images/about__icon.webp"
+								type="image/webp"
+							/>
+							<img
+								src="./assets/images/about__icon.webp"
+								alt=""
+								class="about__image"
+								width="122"
+								height="122"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</picture>
 						Our Quality
-					</h3>
+					</h2>
 					<div class="quality__flex">
-						<div class="quality__flex-end">
-							<h2 class="quality__title">Design a cozy and fresh interior.</h2>
+						<div class="quality__flex-end scroll-slide-right">
+							<h3 class="quality__title">Design a cozy and fresh interior.</h3>
 							<div>
 								<p class="quality__txt">
 									Crafting an Inviting Haven: Unveiling the Art of Designing a
 									Cozy and Fresh Interior for Unmatched Comfort and Serenity
 								</p>
-								<button class="quality__button">Get Started</button>
+								<button
+									class="quality__button"
+									aria-label="Get started with interior design"
+								>
+									Get Started
+								</button>
 							</div>
 						</div>
-						<div class="quality__image">
-							<img src="./assets/images/quality-image.png" alt="" />
+						<div class="quality__image scroll-slide-left">
+							<picture>
+								<source
+									srcset="./assets/images/quality-image.webp"
+									type="image/webp"
+								/>
+								<img
+									src="./assets/images/quality-image.webp"
+									alt="Cozy and fresh interior design example"
+									width="600"
+									height="800"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="end-banner">
+			<section class="end-banner" aria-labelledby="banner-heading">
 				<div class="container end-banner__container">
-					<h3>Let's combine our strengths</h3>
-					<img src="./assets/images/end__banner.png" alt="" />
+					<h2 id="banner-heading" class="scroll-fade-up">
+						Let's combine our strengths
+					</h2>
+					<picture class="scroll-scale">
+						<source
+							srcset="./assets/images/end__banner.webp"
+							type="image/webp"
+						/>
+						<img
+							src="./assets/images/end__banner.webp"
+							alt=""
+							width="800"
+							height="400"
+							loading="lazy"
+							aria-hidden="true"
+						/>
+					</picture>
 				</div>
 			</section>
 		</main>
 
-		<footer class="section__green">
+		<footer class="section__green scroll-fade-in">
 			<div class="container footer__container">
-				<img class="footer__logo" src="./assets/images/logo.png" alt="" />
+				<picture>
+					<source srcset="./assets/images/logo.webp" type="image/webp" />
+					<img
+						class="footer__logo"
+						src="./assets/images/logo.webp"
+						alt="SK Builders"
+						width="240"
+						height="68"
+						loading="lazy"
+					/>
+				</picture>
 				<p class="footer__p">
 					We take great pride in ensuring the satisfaction of our customers,
-					which
+					which is why we guarantee quality in every project.
 				</p>
-				<ul class="footer__social">
+				<ul class="footer__social" aria-label="Social media links">
 					<li>
-						<img src="./assets/images/social_facebook.svg" alt="" />
+						<a
+							href="https://facebook.com/skbuilders"
+							aria-label="Visit our Facebook page"
+						>
+							<img
+								src="./assets/images/social_facebook.svg"
+								alt=""
+								width="40"
+								height="40"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</a>
 					</li>
 					<li>
-						<img src="./assets/images/social__twitter.svg" alt="" />
+						<a
+							href="https://twitter.com/skbuilders"
+							aria-label="Visit our Twitter profile"
+						>
+							<img
+								src="./assets/images/social__twitter.svg"
+								alt=""
+								width="40"
+								height="40"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</a>
 					</li>
 					<li>
-						<img src="./assets/images/social_insta.svg" alt="" />
+						<a
+							href="https://instagram.com/skbuilders"
+							aria-label="Visit our Instagram profile"
+						>
+							<img
+								src="./assets/images/social_insta.svg"
+								alt=""
+								width="40"
+								height="40"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</a>
 					</li>
 					<li>
-						<img src="./assets/images/social__linkedin.svg" alt="" />
+						<a
+							href="https://linkedin.com/company/skbuilders"
+							aria-label="Visit our LinkedIn page"
+						>
+							<img
+								src="./assets/images/social__linkedin.svg"
+								alt=""
+								width="40"
+								height="40"
+								loading="lazy"
+								aria-hidden="true"
+							/>
+						</a>
 					</li>
 				</ul>
 			</div>
-			<ul class="container footer__container-menu">
-				<li>
-					<a href="">HOME</a>
-				</li>
-				<li>
-					<a href="">ABOUT</a>
-				</li>
-				<li>
-					<a href="">PROPERTIES</a>
-				</li>
-				<li>
-					<a href="">BLOG</a>
-				</li>
-				<li>
-					<a href="">PRICING</a>
-				</li>
-			</ul>
-      <button><a href="../../index.html" class="back-button">← Voltar ao Showcase</a></button>
+			<nav aria-label="Footer navigation">
+				<ul class="container footer__container-menu">
+					<li>
+						<a href="#introduction">HOME</a>
+					</li>
+					<li>
+						<a href="#about">ABOUT</a>
+					</li>
+					<li>
+						<a href="#project">PROPERTIES</a>
+					</li>
+					<li>
+						<a href="#quality">BLOG</a>
+					</li>
+					<li>
+						<a href="#introduction">PRICING</a>
+					</li>
+				</ul>
+			</nav>
 		</footer>
 
 		<script src="./js/script.js"></script>
+
 	</body>
 </html>
