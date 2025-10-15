@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css">
+		<title>Scroll Infinito (wheel/touch)</title>
+
+	</head>
+	<body class="container">
+		<header>
+			<h1>Scroll Infinito (wheel/touch)</h1>
+			<div>
+				<p>
+					Slider de imagens em tela cheia controlado por scroll, toque ou
+					teclado, com transição infinita e animações suaves via GSAP.
+				</p>
+				<p>Cada slide exibe imagem e texto com efeito de fade cruzado.</p>
+			</div>
+		</header>
+		<div class="wrapper" id="viewport">
+			<div class="slide">
+				<div class="vignette"></div>
+				<div class="slide__text">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+						molestias placeat dolores blanditiis perspiciatis praesentium
+						necessitatibus maiores, ad voluptates exercitationem laboriosam iste
+						obcaecati velit dolorem amet illum debitis, sit ratione.
+						Reprehenderit vel quo omnis odit, odio laborum suscipit ratione
+						explicabo? Molestiae ab enim officia! Dolorum quis illo culpa
+						libero? Harum aperiam ipsam fuga quas ex recusandae esse laudantium,
+						aut quae.
+					</p>
+				</div>
+
+				<img
+					src="./assets/images/image-01.jpg"
+					alt="Uma praia rochosa com ondas fortes e construções antigas ao fundo."
+					data-index="0"
+				/>
+			</div>
+			<div class="slide">
+				<div class="vignette"></div>
+				<div class="slide__text">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+						officiis veniam nisi labore ex? Ipsam dignissimos non molestiae.
+						Incidunt fuga itaque rerum non quasi labore, delectus vitae odio eos
+						saepe?
+					</p>
+				</div>
+				<img
+					src="./assets/images/image-02.jpg"
+					alt="Um litoral pedregoso com cabanas de pedra e um navio soltando fumaça ao longe."
+					data-index="1"
+				/>
+			</div>
+			<div class="slide">
+				<div class="vignette"></div>
+				<div class="slide__text">
+					<p>Lorem ipsum?</p>
+				</div>
+				<img
+					src="./assets/images/image-03.jpg"
+					alt="Um penhasco alto à beira-mar com o mar agitado batendo em sua base."
+					data-index="2"
+				/>
+			</div>
+			<div class="slide">
+				<div class="vignette"></div>
+				<div class="slide__text">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+						officiis veniam nisi labore ex? Ipsam dignissimos non molestiae.
+						Incidunt fuga itaque rerum non quasi labore, delectus vitae odio eos
+						saepe?
+					</p>
+				</div>
+				<img
+					src="./assets/images/image-04.jpg"
+					alt="Uma praia ampla com ondas espumantes e poucas pessoas caminhando na areia."
+					data-index="3"
+				/>
+			</div>
+			<div class="slide">
+				<div class="vignette"></div>
+				<div class="slide__text">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+						culpa, harum minima sed nam natus exercitationem placeat, dolorem
+						iure officiis dolores provident officia distinctio magnam?
+						Doloremque et sint repudiandae repellendus. Sapiente illo molestias
+						voluptates eaque excepturi architecto, quas error? Incidunt,
+						recusandae rem distinctio eaque sint laboriosam nam, labore illo
+						suscipit nisi soluta sapiente? Illum beatae sunt quos maxime,
+						debitis animi. Error quae praesentium dicta? Error rerum non, illum
+						incidunt vel, qui libero repellat voluptate cum, aliquam quod nulla.
+						Consequatur omnis iste voluptates fugit velit qui deleniti incidunt
+						accusantium temporibus tempore.
+					</p>
+				</div>
+				<img
+					src="./assets/images/image-05.jpg"
+					alt="Um grupo de pessoas observando o mar sobre rochas molhadas na beira da praia."
+					data-index="4"
+				/>
+			</div>
+		</div>
+
+		<div class="vignette" aria-hidden="true"></div>
+		<div class="hint">Use o scroll / swipe para navegar (infinito)</div>
+		<div class="resume">
+			<div>
+				<img src="" alt="" width="50" height="50" />
+				<p></p>
+			</div>
+			<span></span>
+		</div>
+		<span class="sr-only" id="status" aria-live="polite"></span>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+		<!-- <script src="./js/gsap-public/minified/gsap.min.js"></script>
+
+		 -->
+<script src="./js/script.js"></script>
+		
+	</body>
+</html>
