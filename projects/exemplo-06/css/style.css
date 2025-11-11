@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+:root {
+	font-family: 'Story Script', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+header {
+	background-color: #1f453b;
+}
+header h1 {
+	width: 50vw;
+	font-size: clamp(68px, 14vw, 15vw);
+	line-height: clamp(68px, 14vw, 15vw);
+	z-index: 10;
+}
+h1 .text-right {
+	font-family: sans-serif;
+	letter-spacing: -0.04em;
+}
+.cards-group {
+  padding-top: 50px;
+}
+.card.container {
+	height: 90vh;
+	border-radius: 60px;
+	position: sticky;
+	top: 0;
+	transform-origin: top center;
+  padding-top: 50px;
+}
+
+.is--yellow {
+	background-color: #fceea9;
+  
+}
+.is--green {
+	background-color: #294e44;
+}
+.is--blue {
+	background-color: #8bb1fc;
+}
+.is--grey {
+	background-color: #ccc;
+}
+.is--coral {
+	background-color: #febdaa;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.is--sage {
+	background-color: #b2c9ab;
+}

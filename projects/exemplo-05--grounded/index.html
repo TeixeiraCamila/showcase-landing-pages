@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<style>
+			.bg-hero {
+				background-image: linear-gradient(
+						rgba(38, 72, 109, 0.3),
+						rgba(70, 151, 185, 0.2)
+					),
+					url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1920');
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+			.bg-cta {
+				background-image: linear-gradient(
+						rgba(70, 151, 185, 0.85),
+						rgba(38, 72, 109, 0.9)
+					),
+					url('https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=1920');
+				background-repeat: no-repeat;
+			}
+			.story-image {
+				clip-path: polygon(
+					20% 0%,
+					80% 0%,
+					100% 20%,
+					100% 80%,
+					80% 100%,
+					20% 100%,
+					0% 80%,
+					0% 20%
+				);
+			}
+		</style>
+
+		<title>Grounded Luxury Travel</title>
+	</head>
+	<body>
+		<div class="min-h-screen bg-[#E7E5D7]">
+			<section
+				id="hero"
+				class="relative h-[800px] flex items-center justify-center overflow-hidden"
+			>
+				<div class="bg-hero absolute inset-0 bg-cover bg-center bg-no-repeat" />
+
+				<div class="relative z-10 text-center px-6 py-16 max-w-4xl mx-auto">
+					<div class="flex justify-center mb-8 animate-fade-in">
+						<i
+							data-lucide="waves"
+							class="w-16 h-16 text-[#E7E5D7]"
+							strokeWidth="{1}"
+						></i>
+					</div>
+
+					<h1
+						class="font-serif text-5xl md:text-7xl text-[#E7E5D7] mb-6 tracking-wide animate-fade-in-up"
+					>
+						Where Luxury Meets
+						<br />
+						<span class="text-[#E0A865]">The Natural World</span>
+					</h1>
+
+					<p
+						class="text-xl md:text-2xl text-[#A9CDF7] mb-12 font-light leading-relaxed animate-fade-in-delay"
+					>
+						Affordable luxury travel crafted for the mindful explorer
+					</p>
+
+					<button
+						class="bg-[#26486D] text-[#E7E5D7] px-12 py-4 text-lg tracking-wide hover:bg-[#4697B9] "
+					>
+						Begin Your Journey
+					</button>
+				</div>
+
+				<div
+					class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#E7E5D7] to-transparent"
+				/>
+			</section>
+
+			<section id="story" class="py-16 px-6 bg-[#E7E5D7] relative z-10">
+				<div>
+					<div
+						class="grid md:grid-cols-2 gap-20 items-start mb-20 max-w-7xl mx-auto"
+					>
+						<div class="space-y-8">
+							<div>
+								<p
+									class="text-[#4697B9] text-sm tracking-[0.3em] uppercase mb-4"
+								>
+									Our Philosophy
+								</p>
+								<h2
+									class="font-serif text-5xl md:text-6xl text-[#26486D] leading-tight"
+								>
+									Luxury
+									<br />
+									<span class="text-[#BAA545]">Redefined</span>
+								</h2>
+							</div>
+
+							<div class="space-y-6">
+								<p class="text-lg text-[#26486D] leading-relaxed">
+									We reject the notion that luxury requires excess. True
+									refinement lies in thoughtfulness—in choosing quality over
+									quantity, meaning over materialism, and connection over
+									consumption.
+								</p>
+
+								<p class="text-lg text-[#26486D] leading-relaxed">
+									Every experience we curate is designed to awaken something
+									within you. Whether it's the silence of a mountain dawn or the
+									rhythm of ocean waves, we create journeys that restore,
+									inspire, and transform—all within an accessible price range.
+								</p>
+							</div>
+
+							<div class="h-px bg-[#4697B9] opacity-40 w-20"></div>
+
+							<div class="space-y-2">
+								<p class="text-sm text-[#BAA545] tracking-wide font-medium">
+									Starting from $1,100
+								</p>
+								<p class="text-[#26486D] opacity-70 text-sm">
+									Includes accommodation, curated activities & mindful meals
+								</p>
+							</div>
+						</div>
+
+						<div class="space-y-4 h-[500px] relative">
+							<img
+								src="https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg?auto=compress&cs=tinysrgb&w=800"
+								alt="Peaceful traveler in nature"
+								class="story-image w-full h-full object-cover hover:shadow-2xl transition-all duration-700"
+							/>
+							<div
+								class="story-image absolute inset-0 bg-gradient-to-t from-[#26486D] via-transparent to-transparent"
+							></div>
+						</div>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+						<div key="{index}" class="space-y-4 group">
+							<div
+								class="w-14 h-14 rounded-full bg-[#A9CDF7] bg-opacity-30 flex items-center justify-center group-hover:bg-[#E0A865] group-hover:bg-opacity-20 transition-all duration-500"
+							>
+								<i
+									data-lucide="heart"
+									class="w-7 h-7 text-[#4697B9] group-hover:text-[#BAA545] transition-colors duration-500"
+									strokeWidth="{1.5}"
+								></i>
+							</div>
+							<h3 class="font-serif text-xl text-[#26486D]">
+								Authentic Connection
+							</h3>
+							<p class="text-[#26486D] opacity-70 leading-relaxed">
+								Deep experiences that nourish the soul, not surface tourism
+							</p>
+						</div>
+
+						<div key="{index}" class="space-y-4 group">
+							<div
+								class="w-14 h-14 rounded-full bg-[#A9CDF7] bg-opacity-30 flex items-center justify-center group-hover:bg-[#E0A865] group-hover:bg-opacity-20 transition-all duration-500"
+							>
+								<i
+									data-lucide="trending-down"
+									class="w-7 h-7 text-[#4697B9] group-hover:text-[#BAA545] transition-colors duration-500"
+									strokeWidth="{1.5}"
+								></i>
+							</div>
+							<h3 class="font-serif text-xl text-[#26486D]">
+								Intentional Pricing
+							</h3>
+							<p class="text-[#26486D] opacity-70 leading-relaxed">
+								Luxury without the markup—we believe beauty should be accessible
+							</p>
+						</div>
+
+						<div key="{index}" class="space-y-4 group">
+							<div
+								class="w-14 h-14 rounded-full bg-[#A9CDF7] bg-opacity-30 flex items-center justify-center group-hover:bg-[#E0A865] group-hover:bg-opacity-20 transition-all duration-500"
+							>
+								<i
+									data-lucide="globe"
+									class="w-7 h-7 text-[#4697B9] group-hover:text-[#BAA545] transition-colors duration-500"
+									strokeWidth="{1.5}"
+								></i>
+							</div>
+							<h3 class="font-serif text-xl text-[#26486D]">
+								Sustainable Travel
+							</h3>
+							<p class="text-[#26486D] opacity-70 leading-relaxed">
+								Supporting local communities and preserving the places we love
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="offerings"
+				class="py-16 px-6 bg-gradient-to-b from-[#E7E5D7] to-[#CFBAA0]"
+			>
+				<div class="max-w-7xl mx-auto">
+					<div class="text-center">
+						<p class="text-[#4697B9] text-sm tracking-[0.3em] uppercase mb-4">
+							Curated Experiences
+						</p>
+						<h2 class="font-serif text-4xl md:text-5xl text-[#26486D] mb-6">
+							Your Path to Tranquility
+						</h2>
+						<div class="w-20 h-px bg-[#BAA545] mx-auto" />
+					</div>
+
+					<div class="grid mt-16 md:grid-cols-2 lg:grid-cols-4 gap-8">
+						<div
+							key="{index}"
+							class="card bg-[#E7E5D7] p-8 hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+						>
+							<div class="mb-6 flex justify-center">
+								<i
+									data-lucide="waves"
+									class="w-12 h-12 text-[#4697B9] group-hover:text-[#E0A865] transition-colors duration-500"
+									strokeWidth="{1}"
+								></i>
+							</div>
+
+							<h3 class="font-serif text-2xl text-[#26486D] mb-4 text-center">
+								Coastal Sanctuaries
+							</h3>
+
+							<p
+								class="text-[#26486D] opacity-80 leading-relaxed mb-6 text-center"
+							>
+								Secluded beaches and ocean-view retreats where the rhythm of the
+								waves restores your inner calm.
+							</p>
+
+							<div class="text-center">
+								<p class="text-[#BAA545] font-light tracking-wide">
+									From $1,200
+								</p>
+							</div>
+						</div>
+						<div
+							key="{index}"
+							class="card bg-[#E7E5D7] p-8 hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+						>
+							<div class="mb-6 flex justify-center">
+								<i
+									data-lucide="mountain"
+									class="w-12 h-12 text-[#4697B9] group-hover:text-[#E0A865] transition-colors duration-500"
+									strokeWidth="{1}"
+								></i>
+							</div>
+
+							<h3 class="font-serif text-2xl text-[#26486D] mb-4 text-center">
+								Coastal Sanctuaries
+							</h3>
+
+							<p
+								class="text-[#26486D] opacity-80 leading-relaxed mb-6 text-center"
+							>
+								Secluded beaches and ocean-view retreats where the rhythm of the
+								waves restores your inner calm.
+							</p>
+
+							<div class="text-center">
+								<p class="text-[#BAA545] font-light tracking-wide">
+									From $1,200
+								</p>
+							</div>
+						</div>
+						<div
+							key="{index}"
+							class="card bg-[#E7E5D7] p-8 hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+						>
+							<div class="mb-6 flex justify-center">
+								<i
+									data-lucide="trees"
+									class="w-12 h-12 text-[#4697B9] group-hover:text-[#E0A865] transition-colors duration-500"
+									strokeWidth="{1}"
+								></i>
+							</div>
+
+							<h3 class="font-serif text-2xl text-[#26486D] mb-4 text-center">
+								Coastal Sanctuaries
+							</h3>
+
+							<p
+								class="text-[#26486D] opacity-80 leading-relaxed mb-6 text-center"
+							>
+								Secluded beaches and ocean-view retreats where the rhythm of the
+								waves restores your inner calm.
+							</p>
+
+							<div class="text-center">
+								<p class="text-[#BAA545] font-light tracking-wide">
+									From $1,200
+								</p>
+							</div>
+						</div>
+						<div
+							key="{index}"
+							class="card bg-[#E7E5D7] p-8 hover:shadow-2xl transition-all duration-500 group cursor-pointer"
+						>
+							<div class="mb-6 flex justify-center">
+								<i
+									data-lucide="sunrise"
+									class="w-12 h-12 text-[#4697B9] group-hover:text-[#E0A865] transition-colors duration-500"
+									strokeWidth="{1}"
+								></i>
+							</div>
+
+							<h3 class="font-serif text-2xl text-[#26486D] mb-4 text-center">
+								Coastal Sanctuaries
+							</h3>
+
+							<p
+								class="text-[#26486D] opacity-80 leading-relaxed mb-6 text-center"
+							>
+								Secluded beaches and ocean-view retreats where the rhythm of the
+								waves restores your inner calm.
+							</p>
+
+							<div class="text-center">
+								<p class="text-[#BAA545] font-light tracking-wide">
+									From $1,200
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="testimonials" class="py-16 px-6 bg-[#26486D]">
+				<div class="max-w-7xl mx-auto">
+					<div class="text-center mb-20">
+						<p class="text-[#A9CDF7] text-sm tracking-[0.3em] uppercase mb-4">
+							Voices of Travelers
+						</p>
+						<h2 class="font-serif text-4xl md:text-5xl text-[#E7E5D7] mb-6">
+							Journeys That Transform
+						</h2>
+						<div class="w-20 h-px bg-[#E0A865] mx-auto"></div>
+					</div>
+
+					<div class="grid md:grid-cols-3 gap-12">
+						<div
+							key="{index}"
+							class="space-y-6 hover:transform hover:-translate-y-2 transition-transform duration-500"
+						>
+							<div class="h-px w-12 bg-[#4697B9]"></div>
+
+							<p
+								class="text-[#E7E5D7] text-lg leading-relaxed font-light italic"
+							>
+								"This wasn't just a vacation—it was a return to myself. The
+								attention to detail and affordability made luxury accessible in
+								a way I never thought possible."
+							</p>
+
+							<div>
+								<p class="text-[#E0A865] font-serif text-xl">Sarah Chen</p>
+								<p class="text-[#A9CDF7] text-sm mt-1">
+									Coastal Sanctuary, Portugal
+								</p>
+							</div>
+						</div>
+
+						<div
+							key="{index}"
+							class="space-y-6 hover:transform hover:-translate-y-2 transition-transform duration-500"
+						>
+							<div class="h-px w-12 bg-[#4697B9]"></div>
+
+							<p
+								class="text-[#E7E5D7] text-lg leading-relaxed font-light italic"
+							>
+								"This wasn't just a vacation—it was a return to myself. The
+								attention to detail and affordability made luxury accessible in
+								a way I never thought possible."
+							</p>
+
+							<div>
+								<p class="text-[#E0A865] font-serif text-xl">Sarah Chen</p>
+								<p class="text-[#A9CDF7] text-sm mt-1">
+									Coastal Sanctuary, Portugal
+								</p>
+							</div>
+						</div>
+
+						<div
+							key="{index}"
+							class="space-y-6 hover:transform hover:-translate-y-2 transition-transform duration-500"
+						>
+							<div class="h-px w-12 bg-[#4697B9]"></div>
+
+							<p
+								class="text-[#E7E5D7] text-lg leading-relaxed font-light italic"
+							>
+								"This wasn't just a vacation—it was a return to myself. The
+								attention to detail and affordability made luxury accessible in
+								a way I never thought possible."
+							</p>
+
+							<div>
+								<p class="text-[#E0A865] font-serif text-xl">Sarah Chen</p>
+								<p class="text-[#A9CDF7] text-sm mt-1">
+									Coastal Sanctuary, Portugal
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="cta" class="relative py-40 px-6 overflow-hidden">
+				<div class="bg-cta absolute inset-0 bg-cover bg-center"></div>
+
+				<div class="relative z-10 max-w-3xl mx-auto text-center">
+					<div class="flex justify-center mb-8">
+						<div
+							class="w-20 h-20 rounded-full border border-[#E7E5D7] flex items-center justify-center"
+						>
+							<i
+								data-lucide="send"
+								class="w-8 h-8 text-[#E7E5D7]"
+								strokeWidth="{1}"
+							></i>
+						</div>
+					</div>
+
+					<h2
+						class="font-serif text-4xl md:text-6xl text-[#E7E5D7] mb-8 leading-tight"
+					>
+						Your Journey Begins
+						<br />
+						<span class="text-[#E0A865]">With A Single Step</span>
+					</h2>
+
+					<p class="text-xl text-[#A9CDF7] mb-12 font-light leading-relaxed">
+						Let us craft a personalized journey that restores your spirit
+						without exceeding your budget.
+					</p>
+
+					<form class="max-w-md mx-auto space-y-6">
+						<input
+							type="email"
+							placeholder="Your email address"
+							class="w-full px-6 py-4 bg-[#E7E5D7] bg-opacity-20 border border-[#E7E5D7] text-[#26486D] placeholder-[#A9CDF7] focus:outline-none focus:border-[#E0A865] transition-colors duration-300"
+						/>
+
+						<button
+							type="submit"
+							class="w-full bg-[#E0A865] text-[#26486D] px-12 py-4 text-lg tracking-wide hover:bg-[#E7E5D7] transition-all duration-500 font-medium"
+						>
+							Start Planning
+						</button>
+					</form>
+
+					<p class="text-[#A9CDF7] text-sm mt-8 font-light">
+						We respect your privacy. Unsubscribe anytime.
+					</p>
+				</div>
+			</section>
+
+			<footer class="bg-[#26486D] py-16 px-6">
+				<div class="max-w-7xl mx-auto">
+					<div class="grid md:grid-cols-4 gap-12 mb-12">
+						<div class="md:col-span-2">
+							<div class="flex items-center gap-3 mb-6">
+								<i
+									data-lucide="waves"
+									class="w-10 h-10 text-[#4697B9]"
+									strokeWidth="{1}"
+								></i>
+								<span class="font-serif text-2xl text-[#E7E5D7]"
+									>Serene Journeys</span
+								>
+							</div>
+							<p class="text-[#A9CDF7] leading-relaxed font-light">
+								Affordable luxury travel for the mindful explorer. Connecting
+								you to nature's most restorative destinations.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-[#E7E5D7] font-serif text-lg mb-4">Explore</h3>
+							<ul class="space-y-3 text-[#A9CDF7] font-light">
+								<li
+									class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>
+									Destinations
+								</li>
+								<li
+									class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>
+									Experiences
+								</li>
+								<li
+									class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>
+									About Us
+								</li>
+								<li
+									class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>
+									Journal
+								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h3 class="text-[#E7E5D7] font-serif text-lg mb-4">Connect</h3>
+							<div class="flex gap-4">
+								<i
+									data-lucide="instagram"
+									class="w-6 h-6 text-[#A9CDF7] hover:text-[#E0A865] transition-colors cursor-pointer"
+									strokeWidth="{1.5}"
+								></i>
+								<i
+									data-lucide="facebook"
+									class="w-6 h-6 text-[#A9CDF7] hover:text-[#E0A865] transition-colors cursor-pointer"
+									strokeWidth="{1.5}"
+								></i>
+								<i
+									data-lucide="mail"
+									class="w-6 h-6 text-[#A9CDF7] hover:text-[#E0A865] transition-colors cursor-pointer"
+									strokeWidth="{1.5}"
+								></i>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="pt-8 border-t border-[#4697B9] border-opacity-30 flex flex-col md:flex-row justify-between items-center gap-4"
+					>
+						<p class="text-[#A9CDF7] text-sm font-light">
+							© 2025 Serene Journeys. All rights reserved.
+						</p>
+						<div class="flex gap-8 text-[#A9CDF7] text-sm font-light">
+							<span
+								class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>Privacy Policy</span
+							>
+							<span
+								class="hover:text-[#E0A865] transition-colors cursor-pointer"
+								>Terms of Service</span
+							>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://unpkg.com/lucide@latest"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+		<script>
+			lucide.createIcons();
+
+			document.addEventListener('DOMContentLoaded', (event) => {
+				gsap.registerPlugin(ScrollTrigger);
+
+				const heroIcon = document.querySelector('#hero svg');
+				const heroTitle = document.querySelector('#hero h1');
+				const heroText = document.querySelector('#hero p');
+				const heroButton = document.querySelector('#hero button');
+
+				gsap.from(heroIcon, {
+					y: -50,
+					opacity: 0,
+					duration: 1,
+					delay: 0.2,
+					ease: 'back.out(1.7)',
+				});
+
+				gsap.from(heroTitle, {
+					y: -50,
+					opacity: 0,
+					duration: 1,
+					delay: 0.4,
+					ease: 'back.out(1.7)',
+				});
+				gsap.from(heroText, {
+					y: -50,
+					opacity: 0,
+					duration: 1,
+					delay: 0.6,
+					ease: 'back.out(1.7)',
+				});
+        gsap.from(heroButton, {
+					y: -50,
+					opacity: 0,
+					duration: 1,
+					delay: 0.8,
+					ease: 'back.out(1.7)',
+          clearProps: 'all',
+				});
+
+        const offeringsCards = document.querySelectorAll('.card');
+
+        gsap.from(offeringsCards, {
+					scrollTrigger: {
+						trigger: offeringsCards[0],
+						start: 'top 80%',
+					},
+					y: 60,
+					opacity: 0,
+					duration: 0.8,
+					stagger: 0.2,
+					ease: 'power3.out',
+					clearProps: 'all',
+				});
+			});
+		</script>
+	</body>
+</html>

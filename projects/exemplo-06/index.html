@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+			body {
+				font-family: 'Story Script', sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				margin: 0;
+				padding: 0;
+			}
+
+			header {
+				background-color: #1f453b;
+			}
+
+			header h1 {
+				width: 50vw;
+				font-size: clamp(68px, 14vw, 15vw);
+				line-height: clamp(68px, 14vw, 15vw);
+				z-index: 10;
+			}
+
+			h1 .text-right {
+				font-family: sans-serif;
+				letter-spacing: -0.04em;
+			}
+
+			.card-item {
+				height: 100vh;
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				padding-top: 5vh;
+				position: sticky;
+				top: 0;
+			}
+
+			.card-inner {
+				width: 90%;
+				height: 70vh;
+				border-radius: 60px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 48px;
+				font-weight: bold;
+				color: rgba(0, 0, 0, 0.2);
+			}
+
+			.is--yellow {
+				background-color: #fceea9;
+			}
+
+			.is--green {
+				background-color: #294e44;
+				color: rgba(255, 255, 255, 0.3);
+			}
+
+			.is--blue {
+				background-color: #8bb1fc;
+			}
+
+			.is--grey {
+				background-color: #ccc;
+			}
+
+			.is--coral {
+				background-color: #febdaa;
+			}
+
+			.is--sage {
+				background-color: #b2c9ab;
+			}
+		</style>
+		<title>Card Stacking Animation</title>
+	</head>
+	<body>
+		<header class="relative h-screen flex items-center justify-center">
+			<svg
+				class="absolute"
+				id="visual"
+				viewBox="0 0 900 600"
+				width="900"
+				height="600"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				version="1.1"
+			>
+				<rect x="0" y="0" width="900" height="600" fill="#1f453b"></rect>
+				<g transform="translate(426.07902585753374 271.78695326947144)">
+					<path
+						d="M151.1 -143.8C190.9 -111.3 215 -55.6 212.2 -2.7C209.5 50.2 180.1 100.4 140.2 150.4C100.4 200.4 50.2 250.2 3.8 246.4C-42.7 242.7 -85.3 185.3 -110.3 135.3C-135.3 85.3 -142.7 42.7 -152.6 -9.9C-162.5 -62.5 -174.9 -124.9 -149.9 -157.4C-124.9 -189.9 -62.5 -192.5 -3.4 -189C55.6 -185.6 111.3 -176.3 151.1 -143.8"
+						fill="#5F7A6F"
+					></path>
+				</g>
+			</svg>
+			<h1 class="text-white relative z-10">
+				<span class="block text-left">Landing </span>
+				<span class="block text-right">Page </span>
+			</h1>
+		</header>
+
+		<div class="relative">
+			<div class="card-item">
+				<div class="card-inner is--yellow">01</div>
+			</div>
+			<div class="card-item">
+				<div class="card-inner is--green">02</div>
+			</div>
+			<div class="card-item">
+				<div class="card-inner is--blue">03</div>
+			</div>
+			<div class="card-item">
+				<div class="card-inner is--grey">04</div>
+			</div>
+			<div class="card-item">
+				<div class="card-inner is--coral">05</div>
+			</div>
+			<div class="card-item">
+				<div class="card-inner is--sage">06</div>
+			</div>
+		</div>
+
+		<header class="relative h-screen flex items-center justify-center">
+			<svg
+				class="absolute"
+				id="visual"
+				viewBox="0 0 900 600"
+				width="900"
+				height="600"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				version="1.1"
+			>
+				<rect x="0" y="0" width="900" height="600" fill="#1f453b"></rect>
+				<g transform="translate(426.07902585753374 271.78695326947144)">
+					<path
+						d="M151.1 -143.8C190.9 -111.3 215 -55.6 212.2 -2.7C209.5 50.2 180.1 100.4 140.2 150.4C100.4 200.4 50.2 250.2 3.8 246.4C-42.7 242.7 -85.3 185.3 -110.3 135.3C-135.3 85.3 -142.7 42.7 -152.6 -9.9C-162.5 -62.5 -174.9 -124.9 -149.9 -157.4C-124.9 -189.9 -62.5 -192.5 -3.4 -189C55.6 -185.6 111.3 -176.3 151.1 -143.8"
+						fill="#5F7A6F"
+					></path>
+				</g>
+			</svg>
+			<h1 class="text-white relative z-10">
+				<span class="block text-left">Landing </span>
+				<span class="block text-right">Page </span>
+			</h1>
+		</header>
+
+		<!-- <div class="h-screen"></div> -->
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				gsap.registerPlugin(ScrollTrigger);
+
+				// Animações do header
+				const blob = document.querySelector('header svg');
+				const headerTitLeLeft = document.querySelector('.text-left');
+				const headerTitRight = document.querySelector('.text-right');
+
+				gsap.from(blob, {
+					scale: 3,
+					opacity: 0,
+					duration: 2,
+					ease: 'power3.out',
+				});
+
+				gsap.from(headerTitLeLeft, {
+					x: -60,
+					opacity: 0,
+					duration: 1,
+					delay: 0.8,
+					ease: 'back.out(1.7)',
+				});
+
+				gsap.from(headerTitRight, {
+					x: 60,
+					opacity: 0,
+					duration: 1,
+					delay: 0.8,
+					ease: 'back.out(1.7)',
+				});
+
+				// Animação de empilhamento dos cards
+				const cardItems = gsap.utils.toArray('.card-item');
+
+				cardItems.forEach((item, index) => {
+					const card = item.querySelector('.card-inner');
+
+					// Pin cada card quando chegar no topo
+					ScrollTrigger.create({
+						trigger: item,
+						start: 'top top',
+						end: () => `+=${(cardItems.length - index) * window.innerHeight}`,
+						pin: true,
+						pinSpacing: false,
+					});
+
+					// Anima os cards anteriores para empilhar
+					if (index > 0) {
+						gsap.to(card, {
+							y: 30 * index,
+							scrollTrigger: {
+								trigger: item,
+								start: 'top bottom',
+								end: 'top top',
+								scrub: 1,
+							},
+							ease: 'none',
+						});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
