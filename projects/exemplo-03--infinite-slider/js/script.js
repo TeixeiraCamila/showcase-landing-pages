@@ -168,21 +168,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function changeResume(inSlide) {
+		const tomatometer = inSlide.getAttribute('data-tomatometer');
+		console.log(tomatometer);
+		const obs = inSlide.getAttribute('data-obs');
+
 		const inSlideImg = inSlide.lastElementChild.getAttribute('src');
-		const inSlideAlt = inSlide.lastElementChild.getAttribute('alt');
 		const resume = document.querySelector('.resume img');
 		const resumeText = document.querySelector('.resume p');
 		const resumeAlt = document.querySelector('.resume span');
 
 		// Gera número aleatório de estrelas (1-5)
-		const maxRepetitions = 5;
-		const randomRepetitions = Math.floor(Math.random() * maxRepetitions) + 1;
+		// const maxRepetitions = '5';
+		// const randomRepetitions = Math.floor(Math.random() * maxRepetitions) + 1;
 
 		resume.setAttribute('src', inSlideImg);
 
 		const text = '✩';
-		resumeText.innerHTML = text.repeat(randomRepetitions);
-		resumeAlt.innerHTML = inSlideAlt;
+		resumeText.innerHTML = text.repeat(tomatometer);
+		resumeAlt.innerHTML = obs;
 	}
 
 	/* scroll do mouse/trackpad*/
