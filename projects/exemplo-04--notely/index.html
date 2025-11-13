@@ -4,47 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<style>
-			.bg-cream {
-				background-color: #fff7e3;
-			}
-			.bg-yellow {
-				background-color: #fdeb9e;
-			}
-			.bg-magenta {
-				background-color: #850e35;
-			}
-			.bg-navy {
-				background-color: #0c2b4e;
-			}
-
-			.text-cream {
-				color: #fff7e3;
-			}
-			.text-yellow {
-				color: #fdeb9e;
-			}
-			.text-magenta {
-				color: #850e35;
-			}
-			.text-navy {
-				color: #0c2b4e;
-			}
-
-			.border-cream {
-				border-color: #fff7e3;
-			}
-			.border-yellow {
-				border-color: #fdeb9e;
-			}
-			.border-magenta {
-				border-color: #850e35;
-			}
-			.border-navy {
-				border-color: #0c2b4e;
-			}
-		</style>
 
 		<title>Notely</title>
 	</head>
@@ -65,6 +26,28 @@
 							n&#8205; o&#8205; t&#8205; e&#8205; l&#8205; y&#8205;
 						</span>
 					</div>
+					<ul class="hidden md:flex items-center gap-6 font-medium">
+						<li>
+							<a href="#home" class="hover:text-magenta transition-soft"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a href="#history" class="hover:text-magenta transition-soft"
+								>History</a
+							>
+						</li>
+						<li>
+							<a href="#features" class="hover:text-magenta transition-soft"
+								>Features</a
+							>
+						</li>
+						<li>
+							<a href="#emailSection" class="hover:text-magenta transition-soft"
+								>Contact</a
+							>
+						</li>
+					</ul>
 					<button
 						class="bg-navy text-cream px-6 py-2.5 rounded-full font-medium hover:bg-opacity-90 transition-all hover:scale-105 cursor-pointer"
 					>
@@ -143,7 +126,7 @@
 					/>
 				</svg>
 
-				<div class="container mx-auto px-6 pt-8">
+				<div id="features" class="container mx-auto px-6 pt-8">
 					<div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
 						<div
 							class="card text-center p-8 rounded-3xl bg-cream hover:scale-105 hover:transition-transform"
@@ -188,6 +171,39 @@
 							<p class="text-navy opacity-75 leading-relaxed">
 								Fast, eco-friendly shipping right to your doorstep
 							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="history" class="py-20">
+				<div class="container mx-auto px-6">
+					<div
+						class="history-wrapper md:grid md:grid-cols-2 md:items-center gap-8"
+					>
+						<div class="history-text max-w-xl">
+							<h2 class="text-4xl font-bold text-navy mb-4">Our History</h2>
+							<p class="text-lg text-navy opacity-85 leading-relaxed mb-4">
+								Notely began as a simple experiment: sketching layouts and notes
+								in well-loved notebooks, then translating those ideas into
+								handcrafted landing pages. Over time, passion for thoughtful
+								details and tactile design led to a distinct voice — warm,
+								confident, and playful.
+							</p>
+							<p class="text-lg text-navy opacity-75 leading-relaxed">
+								We mix analog warmth with digital precision: vintage paper
+								textures, handcrafted typographic touches, and modern
+								interactions — all tuned to make each page feel personal.
+							</p>
+						</div>
+
+						<div class="history-visual flex justify-center">
+							<img
+								src="./assets/mockup.png"
+								alt="Vintage open notebook mockup on desk"
+								title="Vintage open notebook mockup"
+								class="history-image"
+							/>
 						</div>
 					</div>
 				</div>
@@ -308,156 +324,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
-		<script>
-			lucide.createIcons();
 
-			document.addEventListener('DOMContentLoaded', (event) => {
-				gsap.registerPlugin(ScrollTrigger);
-				gsap.registerPlugin(SplitText);
-
-				// animações
-				const splitText = document.querySelector('.split');
-				const heroTitle = document.querySelector('#heroTitle');
-				const heroBadge = document.querySelector('#heroBadge ');
-				const blob1 = document.querySelector('#blob1');
-				const blob2 = document.querySelector('#blob2');
-				const heroButtons = document.querySelector('#heroButtons ');
-				const heroDescription = document.querySelector('#heroDescription');
-
-				gsap.set('.split', { opacity: 1 });
-				const split = SplitText.create('.split', {
-					type: 'words',
-					wordsClass: 'word++',
-					wordDelimiter: String.fromCharCode(8205),
-				});
-				gsap.from(split.words, {
-					y: -100,
-					opacity: 0,
-					rotation: 'random(-80,80)',
-					stagger: 0.1,
-					duration: 1,
-					ease: 'back',
-				});
-
-				gsap.from('nav', {
-					y: -100,
-					opacity: 0,
-					duration: 2,
-					ease: 'power3.out',
-				});
-
-				gsap.from(heroBadge, {
-					scale: 0,
-					opacity: 0,
-					duration: 0.6,
-					delay: 0.3,
-					ease: 'back.out(1.7)',
-				});
-
-				gsap.from(heroTitle, {
-					y: 50,
-					opacity: 0,
-					duration: 1,
-					delay: 0.5,
-					ease: 'back.out(1.7)',
-				});
-				gsap.from(heroDescription, {
-					y: 30,
-					opacity: 0,
-					duration: 1,
-					delay: 0.7,
-					ease: 'power3.out',
-				});
-				gsap.from(heroButtons, {
-					y: 30,
-					opacity: 0,
-					duration: 1,
-					delay: 0.9,
-					ease: 'power3.out',
-				});
-
-				gsap.from(blob1, {
-					y: 30,
-					x: 50,
-					duration: 3,
-					repeat: -1,
-					yoyo: true,
-					ease: 'sine.inOut',
-				});
-
-				gsap.from(blob2, {
-					y: 40,
-					x: -30,
-					duration: 4,
-					repeat: -1,
-					yoyo: true,
-					ease: 'sine.inOut',
-				});
-
-				const featureCards = document.querySelectorAll('.card');
-				gsap.from(featureCards, {
-					scrollTrigger: {
-						trigger: featureCards[0],
-						start: 'top 80%',
-					},
-					y: 60,
-					opacity: 0,
-					duration: 0.8,
-					stagger: 0.2,
-					ease: 'power3.out',
-					clearProps: 'all',
-				});
-
-				const emailSection = document.querySelector('#emailSection');
-				gsap.from(emailSection, {
-					scrollTrigger: {
-						trigger: emailSection,
-						start: 'top 80%',
-					},
-					scale: 0.9,
-					opacity: 0,
-					duration: 1,
-					ease: 'power3.out',
-				});
-
-				const storyBars = document.querySelectorAll('.story-bar');
-				const stroySquares = document.querySelectorAll('.story-square');
-				const storyText = document.querySelectorAll('#storyText');
-				gsap.from(storyBars, {
-					scrollTrigger: {
-						trigger: storyBars[0],
-						start: 'top 80%',
-					},
-					width: 0,
-					duration: 1,
-					stagger: 0.15,
-					delay: 0.3,
-					ease: 'power2.out',
-				});
-				gsap.from(stroySquares, {
-					scrollTrigger: {
-						trigger: stroySquares[0],
-						start: 'top 80%',
-					},
-					width: 0,
-					rotation: 180,
-					duration: 0.6,
-					stagger: 0.2,
-					delay: 0.6,
-					ease: 'back.out(1.7)',
-				});
-				gsap.from(storyText, {
-					scrollTrigger: {
-						trigger: storyText,
-						start: 'top 80%',
-					},
-					x: -50,
-					opacity: 0,
-					delay: 0.6,
-					duration: 0.6,
-					ease: 'power3.out',
-				});
-			});
-		</script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
