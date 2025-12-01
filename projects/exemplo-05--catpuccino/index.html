@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Catpuccino - A experiência perfeita de café e aconchego em Birigui. Café premium, ambiente retrô-moderno, e Miau, nossa adorável mascote. Ideal para criadores de conteúdo e amigos." />
+  <meta name="keywords" content="café, catpuccino, birigui, restaurante, aconchego, retro moderno, café premium, criadores, content creators" />
+  <meta name="author" content="Catpuccino" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#3D2817" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1A0F08" media="(prefers-color-scheme: dark)" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://catpuccino.com.br/" />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Catpuccino - Café com Aconchego | Birigui" />
+  <meta property="og:description" content="Descubra a experiência única do Catpuccino: café premium, ambiente aconchego e nossa adorável mascote Miau em Birigui." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://catpuccino.com.br/" />
+  <meta property="og:image" content="https://catpuccino.com.br/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Catpuccino - Café com Aconchego | Birigui" />
+  <meta name="twitter:description" content="Café premium em ambiente retrô-moderno perfeito para criadores de conteúdo. Venha conhecer a Miau!" />
+  <meta name="twitter:image" content="https://catpuccino.com.br/og-image.jpg" />
+  
+  <!-- Additional SEO -->
+  <meta name="language" content="Portuguese" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="copyright" content="2024 Catpuccino" />
+  
+  <!-- Performance & Prefetch -->
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  
+  <!-- Critical CSS -->
+  <link rel="stylesheet" href="./css/style-light.css" media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="./css/style-dark.css" media="(prefers-color-scheme: dark)" />
+  
+  <!-- Phosphor Icons - Async Load -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    media="print"
+    onload="this.media='all'"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    media="print"
+    onload="this.media='all'"
+  />
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  </noscript>
+  
+  <!-- Structured Data - JSON-LD Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Catpuccino",
+    "image": "https://catpuccino.com.br/og-image.jpg",
+    "description": "Café premium com ambiente retrô-moderno em Birigui, São Paulo",
+    "url": "https://catpuccino.com.br/",
+    "telephone": "+55 (14) 3000-0000",
+    "email": "cat.capuccino@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Birigui",
+      "addressLocality": "Birigui",
+      "addressRegion": "São Paulo",
+      "postalCode": "",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-21.2825",
+      "longitude": "-50.3364"
+    },
+    "sameAs": [
+      "https://instagram.com/catpuccino",
+      "https://tiktok.com/@catpuccino",
+      "https://twitter.com/catpuccino"
+    ],
+    "priceRange": "$"
+  }
+  </script>
+  
+  <!-- Alternate Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Catpuccino",
+    "url": "https://catpuccino.com.br/",
+    "logo": "https://catpuccino.com.br/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "cat.capuccino@gmail.com"
+    }
+  }
+  </script>
+  
+  <title>Catpuccino - Café com Aconchego | Birigui, São Paulo</title>
+</head>
+<body itemscope itemtype="https://schema.org/LocalBusiness">
+  <!-- Sticky Navigation Header -->
+  <header class="header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navegação Principal">
+      <div class="logo" itemprop="name">Catpuccino</div>
+      <ul class="nav-menu">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#mascot">Mascote</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Abrir/fechar menu de navegação" aria-expanded="false"><i class="ph ph-list"></i></button>
+    </nav>
+  </header>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" aria-label="Alternar modo escuro/claro" title="Modo escuro/claro">
+    <i class="ph ph-moon"></i>
+  </button>
+
+  <!-- Main Content -->
+  <main role="main">
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    
+    <!-- Decorative Shapes -->
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="hero-shape hero-shape-3"></div>
+    
+    <!-- Floating Coffee Cup Icons -->
+   <svg class="floating-icon icon-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#E8C9A0" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    
+    <svg class="floating-icon icon-2" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#E8C9A0" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">Bem-vindo ao <span class="accent">Catpuccino</span></h1>
+      <p class="hero-subtitle">Onde o café encontra o aconchego. Uma experiência retrô-moderna para Gen Z.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Explorar Menu</a>
+        <a href="#contact" class="btn btn-secondary">Reservar</a>
+      </div>
+    </div>
+    <div class="hero-parallax">
+      <div class="parallax-bg" style="background: linear-gradient(135deg, #D4A574 0%, #A0826D 100%);"></div>
+    </div>
+  </section>
+
+  <!-- Experience / Concept Section -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title">Nossa Experiência</h2>
+      <p class="section-subtitle">Descobra o conceito por trás do Catpuccino</p>
+      
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="icon"><i class="ph-fill ph-coffee"></i></div>
+          <h3>Café Premium</h3>
+          <p>Grãos selecionados, torrados artesanalmente e preparados com amor. Cada xícara conta uma história.</p>
+        </article>
+        
+        <article class="experience-card">
+          <div class="icon"><i class="ph-fill ph-house"></i></div>
+          <h3>Aconchego Total</h3>
+          <p>Um ambiente acolhedor e retrô-moderno, perfeito para trabalhar, estudar ou relaxar com amigos.</p>
+        </article>
+        
+        <article class="experience-card">
+          <div class="icon"><i class="ph-fill ph-palette"></i></div>
+          <h3>Espaço Criativo</h3>
+          <p>Inspirado no mundo dos creators. Um lugar para conexões, criatividade e compartilhamento de ideias.</p>
+        </article>
+
+        <article class="experience-card">
+          <div class="icon"><i class="ph-fill ph-smiley"></i></div>
+          <h3>Mascote Fofo</h3>
+          <p>Nosso querido mascote acompanha sua jornada no Catpuccino, trazendo alegria a cada visita.</p>
+        </article>
+      </div>
+
+      <div class="experience-highlight">
+        <h3>Birigui - São Paulo</h3>
+        <p>Localizado no coração da cidade, o Catpuccino é mais que um café. É um refúgio para quem busca qualidade, aconchego e uma comunidade acolhedora.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Menu / Offers Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title">Menu Especial</h2>
+      <p class="section-subtitle">Bebidas e petiscos que fazem sua experiência única</p>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="beverages"><i class="ph-fill ph-coffee"></i> Bebidas</button>
+        <button class="tab-btn" data-category="snacks"><i class="ph-fill ph-croissant"></i> Petiscos</button>
+        <button class="tab-btn" data-category="specials"><i class="ph-fill ph-star"></i> Especiais</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Beverages -->
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-header">
+            <h4>Catpuccino Clássico</h4>
+            <span class="price">R$ 12,00</span>
+          </div>
+          <p>Espresso cremoso com espuma de leite e um toque de canela. O nosso grande destaque.</p>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-header">
+            <h4>Café da Casa</h4>
+            <span class="price">R$ 8,50</span>
+          </div>
+          <p>Café artesanal coado com água filtrada. Simples e perfeito.</p>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-header">
+            <h4>Mocha Retrô</h4>
+            <span class="price">R$ 14,50</span>
+          </div>
+          <p>Mistura perfeita de café, chocolate belga e calor. Um clássico reinventado.</p>
+        </div>
+
+        <div class="menu-item" data-category="beverages">
+          <div class="menu-header">
+            <h4>Café Gelado Criativo</h4>
+            <span class="price">R$ 11,00</span>
+          </div>
+          <p>Café coado gelado com gelo artesanal e xarope de baunilha.</p>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-header">
+            <h4>Croissant Manteiga</h4>
+            <span class="price">R$ 7,50</span>
+          </div>
+          <p>Croissant folhado quentinho, sabor clássico que nunca sai de moda.</p>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-header">
+            <h4>Bolo de Cenoura Úmido</h4>
+            <span class="price">R$ 8,00</span>
+          </div>
+          <p>Receita caseira com cobertura de cream cheese feita na hora.</p>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-header">
+            <h4>Sanduíche Artesanal</h4>
+            <span class="price">R$ 15,00</span>
+          </div>
+          <p>Pão caseiro com ingredientes premium: presunto, queijo e alface fresca.</p>
+        </div>
+
+        <div class="menu-item" data-category="snacks">
+          <div class="menu-header">
+            <h4>Cookie de Chocolate</h4>
+            <span class="price">R$ 5,50</span>
+          </div>
+          <p>Cookie macio com gotas de chocolate belga. Feito com amor.</p>
+        </div>
+
+        <!-- Specials -->
+        <div class="menu-item" data-category="specials">
+          <div class="menu-header">
+            <h4>Catpuccino Golden Hour</h4>
+            <span class="price">R$ 16,00</span>
+          </div>
+          <p>Espresso com leite dourado (turmeric latte) e mel. Edição limitada.</p>
+        </div>
+
+        <div class="menu-item" data-category="specials">
+          <div class="menu-header">
+            <h4>Combo Creator</h4>
+            <span class="price">R$ 24,90</span>
+          </div>
+          <p>Bebida + Petisco + Cookie. Perfeito para longas sessões criativas.</p>
+        </div>
+
+        <div class="menu-item" data-category="specials">
+          <div class="menu-header">
+            <h4>Cold Brew Premium</h4>
+            <span class="price">R$ 13,50</span>
+          </div>
+          <p>Café em imersão por 24h. Suave, encorpado e viciante.</p>
+        </div>
+
+        <div class="menu-item" data-category="specials">
+          <div class="menu-header">
+            <h4>Flat White Perfeito</h4>
+            <span class="price">R$ 13,00</span>
+          </div>
+          <p>Espresso com microespuma de leite. A harmonia do café e leite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mascot + Story Section -->
+  <section class="mascot" id="mascot">
+    <div class="container">
+      <h2 class="section-title">Conheça Nossa Mascote</h2>
+      <p class="section-subtitle">O coração fofinho por trás de cada xícara</p>
+
+      <div class="mascot-container">
+        <div class="mascot-visual">
+          <div class="mascot-icon"><i class="ph-fill ph-cat"></i></div>
+        </div>
+        
+        <div class="mascot-story">
+          <h3>Miau - Nosso Gatinho</h3>
+          <p>Miau nasceu da ideia de unir duas coisas que amamos: gatos e café. Com seus olhos brilhantes e um sorriso que derrete qualquer coração, Miau representa a alma do Catpuccino.</p>
+          
+          <div class="mascot-traits">
+            <div class="trait">
+              <strong>Personalidade:</strong> Carinhoso e curioso como todo bom gato
+            </div>
+            <div class="trait">
+              <strong>Hobby:</strong> Degustar café e conhecer novos amigos
+            </div>
+            <div class="trait">
+              <strong>Sonho:</strong> Que todos encontrem aconchego no Catpuccino
+            </div>
+          </div>
+
+          <p class="mascot-quote">"Meow! Um café bom é como um gato: confortável, reconfortante e sempre te surpreende." - Miau</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Space Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Galeria & Espaço</h2>
+      <p class="section-subtitle">Veja o aconchego do Catpuccino</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" style="background: linear-gradient(135deg, #D4A574 0%, #C4956A 100%); animation: fadeIn 0.8s ease;">
+          <div class="gallery-overlay">Espaço Acolhedor</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #B8956A 0%, #A0826D 100%); animation: fadeIn 0.8s ease 0.1s both;">
+          <div class="gallery-overlay">Detalhes Retrô</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #D4A574 0%, #A0826D 100%); animation: fadeIn 0.8s ease 0.2s both;">
+          <div class="gallery-overlay">Atmosfera Perfeita</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #A0826D 0%, #8B7355 100%); animation: fadeIn 0.8s ease 0.3s both;">
+          <div class="gallery-overlay">Café & Criatividade</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #C4956A 0%, #9D7E6F 100%); animation: fadeIn 0.8s ease 0.4s both;">
+          <div class="gallery-overlay">Encontre Seu Canto</div>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg, #8B7355 0%, #6B5847 100%); animation: fadeIn 0.8s ease 0.5s both;">
+          <div class="gallery-overlay">Miau Espera Por Você</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Products / Highlights Section -->
+  <section class="highlights" id="highlights">
+    <div class="container">
+      <h2 class="section-title">Destaques Especiais</h2>
+      <p class="section-subtitle">Coisas únicas que só encontra no Catpuccino</p>
+
+      <div class="highlights-grid">
+        <article class="highlight-card">
+          <div class="highlight-icon"><i class="ph-fill ph-camera"></i></div>
+          <h3>Insta-worthy Drinks</h3>
+          <p>Nossas bebidas são feitas para serem fotografadas. Cada detalhe é pensado para criar aquele conteúdo perfeito para suas redes.</p>
+        </article>
+
+        <article class="highlight-card">
+          <div class="highlight-icon"><i class="ph-fill ph-gift"></i></div>
+          <h3>Kit Catpuccino</h3>
+          <p>Leve para casa nossos produtos especiais: grãos de café, xícaras temáticas e muito mais.</p>
+        </article>
+
+        <article class="highlight-card">
+          <div class="highlight-icon"><i class="ph-fill ph-users"></i></div>
+          <h3>Comunidade Creators</h3>
+          <p>Junte-se a outros creators no Catpuccino. Networking, parcerias e colaborações acontecem aqui.</p>
+        </article>
+
+        <article class="highlight-card">
+          <div class="highlight-icon"><i class="ph-fill ph-cake"></i></div>
+          <h3>Eventos & Celebrações</h3>
+          <p>Organize seu evento no Catpuccino. Aniversários, lançamentos e reuniões com carinho de gato.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">O Que Dizem Sobre Nós</h2>
+      <p class="section-subtitle">Depoimentos fofinhos de clientes felizes</p>
+
+      <div class="testimonials-slider-container">
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"O Catpuccino é meu lugar favorito para trabalhar! O café é sensacional e a Miau é tão fofa. Já virou meu segundo escritório 😻"</p>
+            <div class="testimonial-author">
+              <strong>Ana Silva</strong>
+              <span>Content Creator</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Que lugar aconchego! Perfeito para longas conversas com amigos. O Catpuccino Clássico é viciante! ☕❤️"</p>
+            <div class="testimonial-author">
+              <strong>João Santos</strong>
+              <span>Estudante</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Ambiente retro-moderno impecável. Café de qualidade e atendimento de primeira. Miau roubou meu coração! 🐱"</p>
+            <div class="testimonial-author">
+              <strong>Marina Costa</strong>
+              <span>Designer Gráfico</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Descobri o Catpuccino recentemente e virou meu lugar de refúgio. Muito mais que café, é uma experiência! 🌟"</p>
+            <div class="testimonial-author">
+              <strong>Lucas Oliveira</strong>
+              <span>Desenvolvedor</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn slider-prev" aria-label="Depoimento anterior"><i class="ph ph-caret-left"></i></button>
+        <button class="slider-btn slider-next" aria-label="Próximo depoimento"><i class="ph ph-caret-right"></i></button>
+      </div>
+
+      <div class="slider-dots">
+        <button class="dot active" data-index="0" aria-label="Depoimento 1"></button>
+        <button class="dot" data-index="1" aria-label="Depoimento 2"></button>
+        <button class="dot" data-index="2" aria-label="Depoimento 3"></button>
+        <button class="dot" data-index="3" aria-label="Depoimento 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact Section -->
+  <footer class="footer" id="contact">
+    <!-- Decorative Footer Shapes -->
+    <div class="footer-shape footer-shape-1"></div>
+    <div class="footer-shape footer-shape-2"></div>
+    <div class="footer-shape footer-shape-3"></div>
+    
+    <!-- Floating Coffee Cup Icons -->
+    <svg class="floating-icon footer-icon-1" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#D4A574" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    
+    <svg class="floating-icon footer-icon-2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#E8C9A0" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Catpuccino</h4>
+          <p>Onde o café encontra o aconchego. Uma experiência única em Birigui.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Endereço</h4>
+          <p>Birigui, São Paulo<br>Brasil</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <p>Email: <a href="mailto:cat.capuccino@gmail.com">cat.capuccino@gmail.com</a></p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ph-fill ph-twitter-logo"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="ph-fill ph-pinterest-logo"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Catpuccino. Todos os direitos reservados. Feito com dedicação.</p>
+        <p><a href="#" class="link-secondary">Política de Privacidade</a> | <a href="#" class="link-secondary">Termos de Serviço</a></p>
+      </div>
+    </div>
+  </footer>
+
+  </main>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
