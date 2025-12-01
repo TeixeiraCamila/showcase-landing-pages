@@ -3,23 +3,20 @@
 <head>
   <!-- Essential Meta Tags -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Catpuccino - A experiência perfeita de café e aconchego em Birigui. Café premium, ambiente retrô-moderno, e Miau, nossa adorável mascote. Ideal para criadores de conteúdo e amigos." />
-  <meta name="keywords" content="café, catpuccino, birigui, restaurante, aconchego, retro moderno, café premium, criadores, content creators" />
-  <meta name="author" content="Catpuccino" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="theme-color" content="#3D2817" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#1A0F08" media="(prefers-color-scheme: dark)" />
+  <meta name="description" content="Catpuccino - Café premium com ambiente retrô-moderno em Birigui. Perfeito para creators e amigos." />
+  <meta name="keywords" content="café, catpuccino, birigui, restaurante" />
+  <meta name="theme-color" content="#3D2817" />
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://catpuccino.com.br/" />
   
   <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:title" content="Catpuccino - Café com Aconchego | Birigui" />
-  <meta property="og:description" content="Descubra a experiência única do Catpuccino: café premium, ambiente aconchego e nossa adorável mascote Miau em Birigui." />
+  <meta property="og:title" content="Catpuccino - Café com Aconchego" />
+  <meta property="og:description" content="Café premium com ambiente retrô-moderno em Birigui. Venha desfrutar de aconchego e qualidade." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://catpuccino.com.br/" />
   <meta property="og:image" content="https://catpuccino.com.br/og-image.jpg" />
@@ -27,24 +24,8 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="pt_BR" />
   
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Catpuccino - Café com Aconchego | Birigui" />
-  <meta name="twitter:description" content="Café premium em ambiente retrô-moderno perfeito para criadores de conteúdo. Venha conhecer a Miau!" />
-  <meta name="twitter:image" content="https://catpuccino.com.br/og-image.jpg" />
-  
-  <!-- Additional SEO -->
-  <meta name="language" content="Portuguese" />
-  <meta name="revisit-after" content="7 days" />
-  <meta name="copyright" content="2024 Catpuccino" />
-  
-  <!-- Performance & Prefetch -->
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  
-  <!-- Critical CSS -->
-  <link rel="stylesheet" href="./css/style-light.css" media="(prefers-color-scheme: light)" />
-  <link rel="stylesheet" href="./css/style-dark.css" media="(prefers-color-scheme: dark)" />
+  <!-- Unified CSS with CSS Variables -->
+  <link rel="stylesheet" href="./css/style.css" />
   
   <!-- Phosphor Icons - Async Load -->
   <link
@@ -72,45 +53,13 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Catpuccino",
-    "image": "https://catpuccino.com.br/og-image.jpg",
-    "description": "Café premium com ambiente retrô-moderno em Birigui, São Paulo",
+    "description": "Café premium com ambiente retrô-moderno em Birigui",
     "url": "https://catpuccino.com.br/",
-    "telephone": "+55 (14) 3000-0000",
-    "email": "cat.capuccino@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Birigui",
       "addressLocality": "Birigui",
       "addressRegion": "São Paulo",
-      "postalCode": "",
       "addressCountry": "BR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "-21.2825",
-      "longitude": "-50.3364"
-    },
-    "sameAs": [
-      "https://instagram.com/catpuccino",
-      "https://tiktok.com/@catpuccino",
-      "https://twitter.com/catpuccino"
-    ],
-    "priceRange": "$"
-  }
-  </script>
-  
-  <!-- Alternate Schemas -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Catpuccino",
-    "url": "https://catpuccino.com.br/",
-    "logo": "https://catpuccino.com.br/logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "email": "cat.capuccino@gmail.com"
     }
   }
   </script>
@@ -142,29 +91,26 @@
   <!-- Main Content -->
   <main role="main">
   <section class="hero" id="home">
-    <div class="hero-overlay"></div>
+    <!-- <div class="hero-overlay"></div> -->
     
-    <!-- Decorative Shapes -->
-    <div class="hero-shape hero-shape-1"></div>
-    <div class="hero-shape hero-shape-2"></div>
-    <div class="hero-shape hero-shape-3"></div>
+    <!-- Decorative Shapes - Floating Coffee Cup Icons -->
+    <svg class="hero-shape hero-shape-1 floating-icon icon-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
     
-    <!-- Floating Coffee Cup Icons -->
-   <svg class="floating-icon icon-1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#E8C9A0" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    <svg class="hero-shape hero-shape-2 floating-icon icon-2" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
     
-    <svg class="floating-icon icon-2" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#E8C9A0" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
+    <svg class="hero-shape hero-shape-3 floating-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 256 256"><path d="M211.75,44.25C195,27.47,170.37,20.79,142.46,25.44c-26.91,4.49-53.87,19.09-75.9,41.12s-36.63,49-41.12,75.9c-4.65,27.91,2,52.51,18.81,69.29C57.54,225.05,75.75,232,96.62,232a103.66,103.66,0,0,0,16.92-1.44c26.91-4.49,53.87-19.09,75.9-41.12s36.63-49,41.12-75.9C235.21,85.63,228.53,61,211.75,44.25ZM77.87,77.87C102.56,53.19,133,39.93,159.15,39.93a62.26,62.26,0,0,1,29,6.67A108.48,108.48,0,0,0,157.1,63.54c-19.2,15.16-31.63,36.32-36.94,62.89-9.72,48.58-44.7,65.18-67.48,70.84C28.71,168.76,39.4,116.35,77.87,77.87ZM178.13,178.13c-34.69,34.68-80.71,46.78-110.32,31.27A108.72,108.72,0,0,0,98.9,192.46c19.2-15.16,31.63-36.32,36.94-62.89,9.72-48.58,44.7-65.18,67.48-70.84C227.29,87.24,216.6,139.65,178.13,178.13Z"></path></svg>
     
     <div class="hero-content">
       <h1 class="hero-title">Bem-vindo ao <span class="accent">Catpuccino</span></h1>
-      <p class="hero-subtitle">Onde o café encontra o aconchego. Uma experiência retrô-moderna para Gen Z.</p>
+      <p class="hero-subtitle">Onde o café encontra o aconchego. Uma experiência única para você.</p>
       <div class="hero-cta">
         <a href="#menu" class="btn btn-primary">Explorar Menu</a>
         <a href="#contact" class="btn btn-secondary">Reservar</a>
       </div>
     </div>
-    <div class="hero-parallax">
+    <!-- <div class="hero-parallax">
       <div class="parallax-bg" style="background: linear-gradient(135deg, #D4A574 0%, #A0826D 100%);"></div>
-    </div>
+    </div> -->
   </section>
 
   <!-- Experience / Concept Section -->

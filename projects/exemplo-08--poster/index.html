@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Transforme seu negócio com a solução completa do ProdutoX. Rápido, seguro e intuitivo. Acelere seus resultados hoje." />
+  <meta name="keywords" content="produto, solução, negócio, acelerador, resultados, inovação" />
+  <meta name="author" content="ProdutoX" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical and Social Media -->
+  <link rel="canonical" href="https://showcase-landing-pages.com/projects/exemplo-01/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ProdutoX - Transforme Seu Negócio" />
+  <meta property="og:description"
+    content="A solução completa para acelerar seus resultados. Rápido, seguro e intuitivo." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "ProdutoX",
+      "description": "Solução completa para acelerar resultados",
+      "brand": {"@type": "Brand", "name": "ProdutoX"}
+    }
+    </script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>ProdutoX - Transforme Seu Negócio | Solução Completa</title>
+</head>
+
+<body>
+
+  <main role="main">
+    <div class="container">
+      <div class="header">
+        <h1>🎬 Criador de Pôsteres</h1>
+        <p>Crie pôsteres profissionais para seus filmes</p>
+      </div>
+
+      <div class="main-grid">
+        <!-- Formulário -->
+        <div class="card">
+          <h2>Informações do Filme</h2>
+
+          <div class="form-group">
+            <label for="title">Título *</label>
+            <input type="text" id="title" placeholder="Ex: SEMANTIC ERROR">
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="year">Ano</label>
+              <input type="text" id="year" placeholder="2022">
+            </div>
+            <div class="form-group">
+              <label for="genre">Gênero</label>
+              <input type="text" id="genre" placeholder="COMEDY ROMANCE">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="nativeTitle">Título Original</label>
+            <input type="text" id="nativeTitle" placeholder="시맨틱 에러">
+          </div>
+
+          <div class="form-group">
+            <label for="directedBy">Dirigido por</label>
+            <input type="text" id="directedBy" placeholder="KIM SOO JUNG">
+          </div>
+
+          <div class="form-group">
+            <label for="writtenBy">Escrito por</label>
+            <input type="text" id="writtenBy" placeholder="JASAN">
+          </div>
+
+          <div class="form-group">
+            <label>Elenco (até 3 atores)</label>
+            <input type="text" id="starring1" placeholder="PARK SEO HAM" style="margin-bottom: 10px;">
+            <input type="text" id="starring2" placeholder="PARK JAE CHAN" style="margin-bottom: 10px;">
+            <input type="text" id="starring3" placeholder="Ator/Atriz 3">
+          </div>
+
+          <div class="form-group">
+            <label for="imageUpload">Imagem do Pôster *</label>
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <button class="btn btn-secondary" onclick="document.getElementById('imageUpload').click()">
+              Escolher Imagem
+            </button>
+          </div>
+
+          <button class="btn btn-primary" onclick="generatePoster()">
+            Gerar Pôster
+          </button>
+        </div>
+
+        <!-- Preview -->
+        <div class="card">
+          <h2>Preview</h2>
+
+          <div class="preview-area" id="previewArea">
+            <div class="preview-placeholder" id="placeholder">
+              <div>
+                📷<br>
+                Preencha os dados e gere seu pôster
+              </div>
+            </div>
+            <img id="posterPreview" class="hidden polaroid-image" alt="Preview do Pôster">
+            <div id="posterOverlay" class="poster-overlay hidden">
+              <div class="poster-title" id="previewTitle"></div>
+              <div class="poster-year" id="previewYear"></div>
+
+              <div class="info-section" id="nativeSection">
+                <div class="info-label">native title</div>
+                <div class="info-value" id="previewNative"></div>
+              </div>
+
+              <div class="info-section" id="genreSection">
+                <div class="info-label">genre</div>
+                <div class="info-value" id="previewGenre"></div>
+              </div>
+
+              <div class="info-section" id="directorSection">
+                <div class="info-label">directed by</div>
+                <div class="info-value" id="previewDirector"></div>
+              </div>
+
+              <div class="info-section" id="writerSection">
+                <div class="info-label">written by</div>
+                <div class="info-value" id="previewWriter"></div>
+              </div>
+
+              <div class="info-section" id="starringSection">
+                <div class="info-label">starring</div>
+                <div class="info-value" id="previewStarring"></div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-download hidden" id="downloadBtn" onclick="downloadPoster()">
+            ⬇️ Baixar Pôster
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="posterCanvas"></canvas>
+
+
+  </main>
+
+  <footer role="contentinfo">
+    <a href="../../index.html" class="back-button">← Voltar ao Showcase</a>
+
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>

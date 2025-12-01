@@ -5,21 +5,21 @@
 
 :root {
   /* Color Palette - Earthy Organic */
-  --primary-dark: #8B7355;
-  --primary-medium: #A0826D;
-  --primary-light: #D4A574;
-  --accent-gold: #D4A574;
-  --accent-warm: #C4956A;
-  --neutral-dark: #3D3D3D;
-  --neutral-medium: #666666;
-  --neutral-light: #F5F3F0;
+  --primary-dark: #7D7362;
+  --primary-medium: #8C8A80;
+  --primary-light: #D2C8B6;
+  --accent-gold: #D2C8B6;
+  --accent-warm: #727C64;
+  --neutral-dark: #3B3F1A;
+  --neutral-medium: #8C8A80;
+  --neutral-light: #D2C8B6;
   --neutral-bg: #FAFAF8;
-  --text-primary: #2A2A2A;
-  --text-secondary: #555555;
-  --border-color: #E8E3DB;
-  --shadow-soft: rgba(0, 0, 0, 0.08);
-  --shadow-medium: rgba(0, 0, 0, 0.12);
-  --shadow-deep: rgba(0, 0, 0, 0.16);
+  --text-primary: #492E12;
+  --text-secondary: #7D7362;
+  --border-color: #D2C8B6;
+  --shadow-soft: #00000014;
+  --shadow-medium: #0000001f;
+  --shadow-deep: #00000029;
 
   /* Typography */
   --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -429,8 +429,8 @@ i.ph {
 
 .hero-title .accent {
   background: linear-gradient(135deg, #D4A574, #E8C9A0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   background-clip: text;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }

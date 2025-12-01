@@ -73,22 +73,10 @@ function initThemeToggle() {
 
 function setTheme(theme) {
   const htmlElement = document.documentElement;
-  const themeToggle = document.querySelector('.theme-toggle');
   
+  // Define o atributo data-theme para mudar variáveis CSS
   htmlElement.setAttribute('data-theme', theme);
   localStorage.setItem('catpuccino-theme', theme);
-  
-  // Remove stylesheet anterior
-  const oldLink = document.querySelector('link[data-theme]');
-  if (oldLink) oldLink.remove();
-  
-  // Adiciona novo stylesheet
-  const newLink = document.createElement('link');
-  newLink.rel = 'stylesheet';
-  newLink.href = theme === 'dark' ? './css/style-dark.css' : './css/style-light.css';
-  newLink.setAttribute('data-theme', theme);
-  document.head.appendChild(newLink);
-  
   updateThemeIcon(theme);
 }
 
