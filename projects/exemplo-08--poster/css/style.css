@@ -177,9 +177,10 @@ body {
 
 .polaroid-image {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.2;
   object-fit: cover;
   margin-bottom: 20px;
+  object-position: top center;
 }
 
 .poster-overlay {
