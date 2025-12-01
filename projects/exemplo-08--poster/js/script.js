@@ -3,7 +3,7 @@ let uploadedImage = null;
 document.getElementById('imageUpload').addEventListener('change', function (e) {
   const file = e.target.files[0];
   if (file) {
-    const reader = new FileReader();
+    const reader = new FileReader(); // converte para base64
     reader.onload = function (event) {
       uploadedImage = event.target.result;
       document.querySelector('.btn-secondary').textContent = 'Trocar Imagem';
