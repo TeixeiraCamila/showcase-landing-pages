@@ -6,6 +6,8 @@
   --desert-sand: #D9B9A0ff;
   --almond-silk: #F2D5CDff;
   --linen: #F1E7DDff;
+  --preview-bg: #e8e4df;
+  /* Cor de fundo da polaroid, usada no JS */
   --muted-teal: #7A9590ff;
 }
 
@@ -144,16 +146,22 @@ body {
   box-shadow: 0 5px 15px rgba(202, 142, 131, 0.4);
 }
 
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .preview-area {
   position: relative;
   width: 100%;
   max-width: 450px;
-  margin: 0 auto;
-  background: #e8e4df;
+  background: var(--preview-bg);
   padding: 30px 30px 40px 30px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   transform: rotate(-0.5deg);
   transition: transform 0.3s;
+  margin-bottom: 20px;
 }
 
 .preview-area:hover {
@@ -164,7 +172,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.2;
   background: #d4cfc9;
   color: var(--muted-teal);
   font-size: 1.2rem;
@@ -179,62 +187,63 @@ body {
   width: 100%;
   aspect-ratio: 1/1.2;
   object-fit: cover;
+  display: block;
   margin-bottom: 20px;
-  object-position: top center;
 }
 
-.poster-overlay {
+.poster-info {
   position: relative;
   background: transparent;
   padding: 0;
 }
 
-.flex {
+.title-year-row {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
 }
 
 .poster-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--shadow-grey);
-  margin-bottom: 2px;
   text-transform: uppercase;
   letter-spacing: -1px;
-  line-height: 1;
+  line-height: 1.1;
   font-family: 'Impact', 'Arial Black', sans-serif;
-  width: 80%;
+  word-wrap: break-word;
+  flex: 1;
+  margin-right: 15px;
 }
 
 .poster-year {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--shadow-grey);
   font-weight: 300;
-  width: 20%;
   font-family: 'Arial', sans-serif;
+  flex-shrink: 0;
 }
 
-.info-section {
-  margin-bottom: 15px;
+.info-row {
+  margin-bottom: 12px;
 }
 
 .info-label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: var(--shadow-grey);
   font-weight: 400;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   font-style: italic;
 }
 
 .info-value {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--shadow-grey);
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.4;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .hidden {
@@ -251,20 +260,48 @@ body {
   }
 
   .poster-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
-.back-button {
+/* Melhoria: Responsividade do Preview em telas pequenas */
+@media (max-width: 500px) {
+  .preview-area {
+    max-width: 100%;
+    /* Ocupa a largura total na coluna simples */
+    padding: 15px 15px 25px 15px;
+    /* Reduz margens */
+    transform: rotate(0deg);
+    /* Remove a rotação em telas pequenas */
+  }
+
+  .preview-area:hover {
+    transform: scale(1.02);
+    /* Mantém apenas o scale no hover */
+  }
+
+  .poster-title {
+    font-size: 1.6rem;
+    /* Reduz o tamanho da fonte do título no preview */
+  }
+
+  .poster-year {
+    font-size: 1.2rem;
+  }
+}
+footer {
+  padding: 1rem;
+}
+footer p,
+footer a {
+  display: block;
   width: 100%;
-  display: grid;
-  place-items: center;
-  margin: 1rem;
+  text-align: center;
   font-weight: 800;
   color: var(--linen);
-  transition: all 0.3s;
+  transition: all 300ms ease-in-out;
 }
 
-.back-button:hover {
+footer a:hover {
   color: var(--cinnamon-wood);
 }

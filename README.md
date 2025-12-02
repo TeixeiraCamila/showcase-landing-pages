@@ -17,8 +17,10 @@ Este é um showcase de **6 landing pages profissionais** construídas com HTML5,
 | 🏢 **Exemplo 02** | Real Estate | Agência imobiliária | ✅ Live |
 | 🎬 **Exemplo 03** | Slider | Galeria infinita de filmes | ✅ Live |
 | 📝 **Exemplo 04** | E-commerce | Loja de cadernos personalizados | ✅ Live |
-| ✈️ **Exemplo 05** | Travel | Agência eco-turismo | ✅ Live |
-| ☕ **Catpuccino** | Cafeteria | Café premium (bônus) | ✅ Live |
+| ✈️ **Exemplo 05** | Cafeteria | Café premium (bônus) | ✅ Live |
+| 🏢 **Exemplo 06** | Grounded Luxury Travel | Grounded Luxury Travel | ✅ Live |
+| 📝 **Exemplo 07** | Landing | Exemplo Scroll | ✅ Live |
+| 🎬 **Exemplo 08** | Landing Page | Gerador de Pôsteres | ✅ Live |
 
 ## ✨ Características Principais
 
